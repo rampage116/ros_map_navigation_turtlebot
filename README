@@ -1,0 +1,11 @@
+In order to run the project, please follow and execute the following steps:
+
+  a) On your Turtlebot's PC
+    roscore
+    roslaunch turtlebot_bringup minimal.launch                   
+    roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/ros/Desktop/gaitech_edu-master/src/maps/mapa1.yaml
+    
+  b) On your Workstation
+    roslaunch turtlebot_rviz_launchers view_navigation.launch
+    rosrun sound_play soundplay_node.py
+    python /home/ros/Desktop/gaitech_edu-master/src/turtlebot/navigation/map_navigation/scripts/map_navigation.py
